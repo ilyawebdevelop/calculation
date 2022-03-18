@@ -40,23 +40,3 @@ range.onchange = function () {
   let saleIdEl = document.getElementById(saleId);
   saleIdEl.style.visibility = 'visible';
 }
-
-
-
-
-
-
-
-
-
-// JS
-// SUM CHANGE
-// let range = document.getElementById('myRange');
-// let result = document.getElementById('calculation__sum-change');
-// let resultValue = range.value;
-// let calcMonthSum = document.getElementById('calculation__month-sum');
-// range.onchange = function() {
-// 	let resultSum = range.value * 0.04;
-// 	result.innerHTML = range.value;
-// 	calcMonthSum.innerHTML = resultSum + '<span> ₽</span>';
-// }
