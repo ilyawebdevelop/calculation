@@ -1,0 +1,183 @@
+body {
+  font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+  padding: 0;  
+}
+.calculation {
+  padding: 50px;
+  width: 780px;
+}
+.calculation__wrapper {
+  padding: 15px;
+  background-color: #fafafb;
+  border-radius: 15px;
+}
+.calculation__title {
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #3f3f3f;
+}
+.calculation__inner {
+  display: flex;
+  align-items: center;
+}
+.calculation__sale {
+  width: 565px;
+  margin-right: 50px;
+}
+.calculation__sale-sum {
+  display: flex;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #d2d2d3;
+}
+#sale-sum_zero {
+  margin-right: 17px;
+}
+#sale-sum_2 {
+  margin-right: 210px;
+}
+.calculation__sale-range {
+  width: 100%;
+  border-radius: 7px;
+}
+.calculation__sale-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(26, 1fr);
+  gap: 0;
+  margin-top: 15px;
+}
+.calculation__sale-item {
+  grid-column: 1 span;
+  text-align: center;
+  font-size: 17px;
+  color: #989898;
+  visibility: hidden;
+}
+#sale0 {
+  visibility: visible!important;
+}
+#sale2 {
+  visibility: visible!important;
+}
+#sale5 {
+  visibility: visible!important;
+  display: flex;
+  align-items: start;
+  position: relative;
+  color: #ffb13b;
+}
+#sale5:after {
+  position: absolute;
+  color: #ffb13b;
+  content: '★';  
+  display: block;
+  top: -5px;
+  right: -3px;
+}
+.calculation__sale-item-text {
+  position: absolute;
+  font-size: 9px;
+  left: 24px;
+  color: #ffb13b;
+  width: 100px;
+}
+#sale25 {
+  visibility: visible!important;
+  text-decoration: underline;
+}
+.calculation__total {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  height: -webkit-fill-available;
+  padding-top: 6px;
+}
+.calculation__total-sum {
+  color: #8dbd57;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 500;
+}
+.calculation__total-title {
+  font-size: 15px;
+  color: #454545;
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 23px;
+  width: 23px;
+  border-radius: 100%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -10px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+  margin-bottom: -10px;  
+  background-color: #fff;
+  background: url('icon1.png') no-repeat center center / 110%;
+}
+ 
+/* Тоже самое для Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+ 
+/* Тоже самое для IE */
+input[type=range]::-ms-thumb {
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.calculation__sale-range {
+	-webkit-appearance: none;
+  width: 100%;  background: #eeeeee;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+	transition: all 0.5s ease;
+	height: 14px;
+	}
+  .calculation__sale-range:focus {
+		background: #e3e3e3;
+  }
+
+
+
+
+  input[type='range'] {
+    overflow: hidden;  
+  }
+  
+ 
+  
+  input[type='range']::-webkit-slider-thumb {  
+    
+    box-shadow: -525px 10px 0 520px #ffb13b; 
+  }
+  
+
+  
+
+  
+ 
+  
+

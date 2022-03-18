@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  
+
+  <!-- Калькулятор -->
+  <div class="calculation">
+    <div class="calculation__wrapper">
+      <div class="calculation__title">Калькулятор. Бонусы за каждый заказ. Загляните в будущее!</div>
+      <div class="calculation__inner">
+        <div class="calculation__sale">
+          <div class="calculation__sale-sum">
+            <div class="calculation__sale-sum-item" id="sale-sum_zero">0₽</div>
+            <div class="calculation__sale-sum-item" id="sale-sum_2">2000₽</div>
+            <div class="calculation__sale-sum-item" id="sale-sum_4">4000₽</div>
+          </div>
+          <input type="range" min="0" max="25" value="0" class="calculation__sale-range" id="calculation__sale-range">
+          <ul class="calculation__sale-list" id="calculation__sale-list">
+            <li class="calculation__sale-item" id="sale0">
+              0
+            </li>
+            <li class="calculation__sale-item" id="sale1">
+              1
+            </li>
+            <li class="calculation__sale-item" id="sale2">
+              2
+            </li>
+            <li class="calculation__sale-item" id="sale3">
+              3
+            </li>
+            <li class="calculation__sale-item" id="sale4">
+              4
+            </li>
+            <li class="calculation__sale-item" id="sale5">
+              5
+              <!-- <div class="calculation__sale-item-text">
+                +4000₽ Разовый доп.<br>бонус за 5 заказов
+              </div> -->
+            </li>
+            <li class="calculation__sale-item" id="sale6">
+              6
+            </li>
+            <li class="calculation__sale-item" id="sale7">
+              7
+            </li>
+            <li class="calculation__sale-item" id="sale8">
+              8
+            </li>
+            <li class="calculation__sale-item" id="sale9">
+              9
+            </li>
+            <li class="calculation__sale-item" id="sale10">
+              10
+            </li>
+            <li class="calculation__sale-item" id="sale11">
+              11
+            </li>
+            <li class="calculation__sale-item" id="sale12">
+              12
+            </li>
+            <li class="calculation__sale-item" id="sale13">
+             13
+            </li>
+            <li class="calculation__sale-item" id="sale14">
+              14
+            </li>
+            <li class="calculation__sale-item" id="sale15">
+             15
+            </li>
+            <li class="calculation__sale-item" id="sale16">
+             16
+            </li>
+            <li class="calculation__sale-item" id="sale17">
+             17
+            </li>
+            <li class="calculation__sale-item" id="sale18">
+              18
+            </li>
+            <li class="calculation__sale-item" id="sale19">
+              19
+            </li>
+            <li class="calculation__sale-item" id="sale20">
+              20
+            </li>
+            <li class="calculation__sale-item" id="sale21">
+              21
+            </li>
+            <li class="calculation__sale-item" id="sale22">
+              22
+            </li>
+            <li class="calculation__sale-item" id="sale23">
+              23
+            </li>
+            <li class="calculation__sale-item" id="sale24">
+              24
+            </li>
+            <li class="calculation__sale-item" id="sale25">
+              25
+            </li>
+
+          </ul>
+        </div><!-- Calculation-sale -->
+        <div class="calculation__total">
+          <div class="calculation__total-sum" id="calculation__total-sum">0 ₽</div>
+          <div class="calculation__total-title">Мой кешбек</div>
+        </div><!-- Calculation-total -->
+      </div><!-- Calculation-inner -->
+    </div><!-- Calculation-wrapper -->
+  </div><!-- Calculation -->
+  
+  <script src="script.js"></script>
+</body>
+</html>
