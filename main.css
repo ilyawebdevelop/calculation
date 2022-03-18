@@ -61,21 +61,23 @@ li {
   grid-column: 1 span;
   text-align: center;
   font-size: 17px;
-  color: #989898;
+  color: #ffb13b; 989898
   visibility: hidden;
 }
 #sale0 {
   visibility: visible!important;
+  color: #989898;
 }
 #sale2 {
   visibility: visible!important;
+  color: #989898;
 }
 #sale5 {
   visibility: visible!important;
   display: flex;
   align-items: start;
   position: relative;
-  color: #ffb13b;
+  color: #ffb13b;  
 }
 #sale5:after {
   position: absolute;
@@ -95,6 +97,7 @@ li {
 #sale25 {
   visibility: visible!important;
   text-decoration: underline;
+  color: #989898;
 }
 .calculation__total {
   display: flex;
