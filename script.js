@@ -24,21 +24,17 @@ function removeColor() {
 range.onchange = function () {
   removeVisibility();
   removeColor();
-  let rangeValue = range.value; 
+  let rangeValue = range.value;
   if (rangeValue <= 4) {
-    // totalSum.innerHTML = 2000 + ' ₽';
     cashbackSumActive2.style.color = '#8dbd57';
   }
   if (rangeValue <= 1) {
-    // totalSum.innerHTML = 0 + ' ₽';
     removeColor();
   }
   if (rangeValue >= 5) {
-    // totalSum.innerHTML = 4000 + ' ₽';
     cashbackSumActive4.style.color = '#8dbd57';
   }
   let numbRangeValue = Number(rangeValue);
-  console.log(numbRangeValue);
 
   switch (numbRangeValue) {
     case 0:
@@ -119,8 +115,6 @@ range.onchange = function () {
     case 25:
       totalSum.innerHTML = 90000 + ' ₽';
       break;
-    default:
-      console.log('default');
   }
   let saleId = 'sale' + rangeValue;
   let saleIdEl = document.getElementById(saleId);
