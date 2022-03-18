@@ -113,39 +113,6 @@ li {
   font-size: 15px;
   color: #454545;
 }
-
-
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 23px;
-  width: 23px;
-  border-radius: 100%;
-  background: #ffffff;
-  cursor: pointer;
-  margin-top: -10px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
-  margin-bottom: -10px;  
-  background-color: #fff;
-  background: url('icon1.png') no-repeat center center / 110%;
-}
- 
-/* Тоже самое для Firefox */
-input[type=range]::-moz-range-thumb {
-  height: 23px;
-  width: 23px;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
-}
- 
-/* Тоже самое для IE */
-input[type=range]::-ms-thumb {
-  height: 23px;
-  width: 23px;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
-}
-
 .calculation__sale-range {
 	-webkit-appearance: none;
   width: 100%;  background: #eeeeee;
@@ -161,19 +128,44 @@ input[type=range]::-ms-thumb {
   }
 
 
+/* Стилизация ProgressBar */
+input[type='range'] {
+  overflow: hidden;  
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 23px;
+  width: 23px;
+  border-radius: 100%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -10px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+  margin-bottom: -10px;  
+  background-color: #fff;
+  background: url('icon1.png') no-repeat center center / 110%;
+  box-shadow: -525px 10px 0 520px #ffb13b; 
+}
+ /* Тоже самое для Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+} 
+/* Тоже самое для IE */
+input[type=range]::-ms-thumb {
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
 
 
-  input[type='range'] {
-    overflow: hidden;  
-  }
-  
  
   
-  input[type='range']::-webkit-slider-thumb {  
-    
-    box-shadow: -525px 10px 0 520px #ffb13b; 
-  }
-  
+
 
   
 
