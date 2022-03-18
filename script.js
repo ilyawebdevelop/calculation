@@ -10,6 +10,7 @@ let cashbackSumActive4 = document.getElementById('sale-sum_4');
 function removeVisibility() {
   saleAllEl.forEach((el) => {
     el.style.visibility = 'hidden';
+    el.style.color = '#989898';
   })
 }
 // Удаление у всех элементов зеленого цвета
@@ -39,4 +40,5 @@ range.onchange = function () {
   let saleId = 'sale' + rangeValue;
   let saleIdEl = document.getElementById(saleId);
   saleIdEl.style.visibility = 'visible';
+  saleIdEl.style.color = '#ffb13b';
 }
